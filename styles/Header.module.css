@@ -1,0 +1,44 @@
+.spin {
+  color: #69dc9e;
+}
+
+.spin:after {
+  animation: spin 4s linear infinite alternate;
+  content: "٩(◕‿◕｡)۶";
+}
+
+@keyframes spin {
+  0% {
+    content: "٩(◕‿◕｡)۶";
+  }
+  10% {
+    color: "(*・ω・)/";
+  }
+  20% {
+    content: "＼(・ω・*)";
+  }
+  30% {
+    content: "⊂(･ω･*⊂)";
+  }
+  40% {
+    content: "(⊃｡•́‿•̀｡)⊃";
+  }
+  50% {
+    content: "＼(★ω★)/";
+  }
+  60% {
+    content: "°˖✧◝(⁰▿⁰)◜✧˖°";
+  }
+  70% {
+    content: "(ﾉ´ヮ`)ﾉ*: ･ﾟ	";
+  }
+  80% {
+    content: "(╯✧▽✧)╯";
+  }
+  90% {
+    content: "♪└|∵|┐♪└|∵|┘♪";
+  }
+  100% {
+    content: "♪└|∵|┐♪└|∵|┘♪";
+  }
+}
