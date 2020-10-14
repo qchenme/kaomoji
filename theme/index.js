@@ -8,6 +8,7 @@ export default {
     highlight: "#FF3864",
     hint: "#C0BDA5",
     white: "#ffffff",
+    green: "#69dc9e",
   },
   space: [0, 4, 8, 16, 32, 64, 128, 256],
   fonts: {
@@ -23,40 +24,63 @@ export default {
     body: 1.5,
     heading: 1.25,
   },
-  variants: {
-    header: {
-      minHeight: "4em",
-      margin: "2px",
-    },
-  },
+  variants: {},
   text: {
-    heading: {
-      fontFamily: "heading",
-      fontSize: 64,
-    },
     headKaomoji: {
       fontFamily: "body",
       fontWeight: "bold",
-      fontSize: 32,
+      fontSize: [20, 24, 32],
     },
   },
   buttons: {
-    primary: {
-      color: "text",
+    menuPrimary: {
+      color: "primary",
       bg: "transparent",
+      display: "block",
+      marginRight: 1,
+      borderRadius: 0,
+      borderTopRightRadius: "0.5em",
+      borderBottomRightRadius: "0.5em",
       font: "body",
-      fontWeight: 700,
+      fontWeight: 400,
+      fontSize: [12, 14, 16, 20],
       cursor: "pointer",
       "&:hover": {
         color: "highlight",
         bg: "text",
+        fontWeight: 700,
       },
     },
-    selected: {
+    menuSelected: {
       color: "highlight",
       bg: "text",
+      display: "block",
+      marginRight: 1,
+      borderRadius: 0,
+      borderTopRightRadius: "0.5em",
+      borderBottomRightRadius: "0.5em",
       font: "body",
       fontWeight: 700,
+      fontSize: [12, 14, 16, 20],
+    },
+    kaomoji: {
+      color: "text",
+      bg: "transparent",
+      display: "inline-block",
+      mx: 4,
+      my: 3,
+      padding: 2,
+      font: "heading",
+      fontWeight: 700,
+      fontSize: [16, 20, 24],
+      textDecoration: "none",
+      cursor: "pointer",
+      outline: "none",
+      "&:hover": {
+        color: "white",
+        borderColor: "highlight",
+        bg: "highlight",
+      },
     },
   },
 };

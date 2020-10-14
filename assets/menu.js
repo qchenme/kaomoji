@@ -1,12 +1,15 @@
 export default [
+  "♥",
   "happy",
-  "excited",
   "dance",
   "celebrate",
+  "cute",
   "sad",
   "embarrassed",
   "angry",
   "cat",
   "bear",
   "sleep",
+  "flip table",
+  "high five",
 ];

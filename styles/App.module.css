@@ -1,0 +1,24 @@
+.sidebar {
+  grid-area: sidebar;
+  position: fixed;
+  left: 0;
+}
+
+.content {
+  grid-area: content;
+}
+
+.header {
+  grid-area: header;
+  min-height: 4em;
+  min-width: 20em;
+}
+
+.layout {
+  display: grid;
+  grid-gap: 4;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "....... header header header header header"
+    "sidebar content content content content content";
+}
