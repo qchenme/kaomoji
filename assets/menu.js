@@ -14,6 +14,7 @@ export default [
   { id: "judging", title: "judging" },
   { id: "expressionless", title: "expressionless" },
   { id: "confused", title: "confused" },
+  { id: "what", title: "whaaaaat?" },
   { id: "cheerUp", title: "cheer up" },
   { id: "bleeding", title: "bleeding" },
   { id: "run", title: "run" },
