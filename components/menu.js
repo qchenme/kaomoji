@@ -2,38 +2,34 @@ import React from "react";
 import Link from "next/link";
 import { Button } from "rebass";
 import menu from "../assets/menu";
+import { useRouter } from "next/router";
 
-class Menu extends React.Component {
-  currentPage(title) {
-    if (title === "♥") {
-      return "home" === this.props.currentPage;
-    }
-    return title === this.props.currentPage;
+const Menu = () => {
+  const router = useRouter();
+  const { category } = router.query;
+
+  function currentPage(id) {
+    const page = category?.[0] ?? "heart";
+    return id === page;
   }
 
-  href(title) {
-    if (title === "♥" || title === "home") {
-      return "/";
-    } else {
-      return title;
-    }
+  function href(id) {
+    return id === "heart" ? "/" : id;
   }
 
-  render() {
-    return (
-      <>
-        {menu.map((title) => (
-          <Link href={`${this.href(title)}`} key={title}>
-            {this.currentPage(title) ? (
-              <Button variant="menuSelected">{title.toUpperCase()}</Button>
-            ) : (
-              <Button variant="menuPrimary">{title.toUpperCase()}</Button>
-            )}
-          </Link>
-        ))}
-      </>
-    );
-  }
-}
+  return (
+    <>
+      {menu.map((entry) => (
+        <Link href={`${href(entry.id)}`} key={entry.id}>
+          {currentPage(entry.id) ? (
+            <Button variant="menuSelected">{entry.title.toUpperCase()}</Button>
+          ) : (
+            <Button variant="menuPrimary">{entry.title.toUpperCase()}</Button>
+          )}
+        </Link>
+      ))}
+    </>
+  );
+};
 
 export default Menu;
