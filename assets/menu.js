@@ -14,4 +14,10 @@ export default [
   { id: "judging", title: "judging" },
   { id: "expressionless", title: "expressionless" },
   { id: "confused", title: "confused" },
+  { id: "cheerUp", title: "cheer up" },
+  { id: "bleeding", title: "bleeding" },
+  { id: "run", title: "run" },
+  { id: "stalk", title: "stalk" },
+  { id: "yummy", title: "yummy" },
+  { id: "layDown", title: "lay down" },
 ];
