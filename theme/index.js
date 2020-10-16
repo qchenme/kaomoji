@@ -43,7 +43,7 @@ export default {
       borderBottomRightRadius: "0.5em",
       font: "body",
       fontWeight: 400,
-      fontSize: [12, 14, 16, 20],
+      fontSize: [14, 16, 20],
       cursor: "pointer",
       "&:hover": {
         color: "highlight",
@@ -61,7 +61,7 @@ export default {
       borderBottomRightRadius: "0.5em",
       font: "body",
       fontWeight: 700,
-      fontSize: [12, 14, 16, 20],
+      fontSize: [14, 16, 20],
     },
     kaomoji: {
       color: "text",
