@@ -3,7 +3,7 @@
 }
 
 .spin:after {
-  animation: spin 4s linear infinite alternate;
+  animation: spin 2s linear infinite alternate;
   content: "♪└|∵|┐♪";
 }
 
