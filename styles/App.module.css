@@ -17,7 +17,7 @@
 .layout {
   display: grid;
   grid-gap: 4;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 300px repeat(5, minmax(100px, 1fr));
   grid-template-areas:
     "....... header header header header header"
     "sidebar content content content content content";
