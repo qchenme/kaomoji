@@ -7,7 +7,7 @@ const Category = (props) => {
 };
 
 export async function getStaticPaths() {
-  const menu = fs.readdirSync("public");
+  const menu = fs.readdirSync("public/kaomoji");
   const paths = menu.map((title) => ({
     params: { category: [title.split(".")[0]] },
   }));
@@ -23,7 +23,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(props) {
   const category = props.params.category?.[0] ?? "heart";
-  const result = fs.readFileSync(`public/${category}.txt`, "utf8");
+  const result = fs.readFileSync(`public/kaomoji/${category}.txt`, "utf8");
   const kaomoji = result.split("\n");
 
   return {
