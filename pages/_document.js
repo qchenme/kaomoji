@@ -10,6 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <title>♡Kaomoji</title>
           <link
             rel="apple-touch-icon"
             sizes="180x180"
