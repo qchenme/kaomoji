@@ -31,6 +31,10 @@ class MyDocument extends Document {
           <link rel="manifest" href="/favicon/site.webmanifest" />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
+          <meta
+            name="description"
+            context="Find kaomojis by category. Copy and paste in one-click."
+          />
         </Head>
         <body>
           <Main />
