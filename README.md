@@ -1,13 +1,19 @@
-(ﾉ´ヮ`)ﾉ*: ･ﾟ	Ⓜy kaomoji cheatsheet
+(ﾉ ´ ヮ`)ﾉ\*: ･ﾟ Kaomoji cheatsheet
 
 _Developed using [Next.js](https://nextjs.org/)_
 
-_Deployed on [Vercel](https://vercel.com/)_
+_Deployed using [Vercel](https://vercel.com/)_
 
-## Run locally
+## Start locally
 
 ```bash
 npm run dev
 # or
 yarn dev
+```
+
+## Graphql playground
+
+```
+http://localhost:3000/api/graphql
 ```
