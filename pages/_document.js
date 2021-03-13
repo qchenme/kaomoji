@@ -35,6 +35,7 @@ class MyDocument extends Document {
             name="description"
             context="Find kaomojis by category. Copy and paste in one-click."
           />
+          <meta charset="utf-8" />
         </Head>
         <body>
           <Main />

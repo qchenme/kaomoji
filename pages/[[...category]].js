@@ -1,15 +1,15 @@
 import React from "react";
 import Kaomoji from "../components/kaomoji";
-import * as fs from "fs";
+import { categoriesReader, kaomojiReader } from "../helpers/utils";
 
 const Category = (props) => {
   return <Kaomoji kaomoji={props.kaomoji} />;
 };
 
 export async function getStaticPaths() {
-  const menu = fs.readdirSync("public/kaomoji");
+  const menu = categoriesReader();
   const paths = menu.map((title) => ({
-    params: { category: [title.split(".")[0]] },
+    params: { category: [title] },
   }));
 
   // For root /
@@ -23,8 +23,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(props) {
   const category = props.params.category?.[0] ?? "heart";
-  const result = fs.readFileSync(`public/kaomoji/${category}.txt`, "utf8");
-  const kaomoji = result.split("\n");
+  const kaomoji = kaomojiReader(category);
 
   return {
     props: {
