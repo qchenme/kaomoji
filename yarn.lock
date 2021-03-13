@@ -1919,6 +1919,11 @@
   "resolved" "https://registry.npmjs.org/merge-stream/-/merge-stream-2.0.0.tgz"
   "version" "2.0.0"
 
+"micro-cors@^0.1.1":
+  "integrity" "sha512-6WqIahA5sbQR1Gjexp1VuWGFDKbZZleJb/gy1khNGk18a6iN1FdTcr3Q8twaxkV5H94RjxIBjirYbWCehpMBFw=="
+  "resolved" "https://registry.npmjs.org/micro-cors/-/micro-cors-0.1.1.tgz"
+  "version" "0.1.1"
+
 "micro@^9.3.2", "micro@^9.3.4":
   "integrity" "sha512-smz9naZwTG7qaFnEZ2vn248YZq9XR+XoOH3auieZbkhDL4xLOxiE+KqG8qqnBeKfXA9c1uEFGCxPN1D+nT6N7w=="
   "resolved" "https://registry.npmjs.org/micro/-/micro-9.3.4.tgz"
