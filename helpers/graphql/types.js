@@ -20,6 +20,7 @@ export const typeDefs = gql`
     EMBARRASSED
     ANGRY
     CAT
+    BEAR
     SLEEP
     FLIP_TABLE
     JUDGING

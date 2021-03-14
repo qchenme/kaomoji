@@ -29,7 +29,7 @@ export default {
     headKaomoji: {
       fontFamily: "body",
       fontWeight: "bold",
-      fontSize: [20, 24, 32],
+      fontSize: [28, 32, 30],
     },
   },
   buttons: {
@@ -37,13 +37,15 @@ export default {
       color: "primary",
       bg: "transparent",
       display: "block",
+      whiteSpace: "normal",
+      wordWrap: "breakWord",
       marginRight: 1,
       borderRadius: 0,
       borderTopRightRadius: "0.5em",
       borderBottomRightRadius: "0.5em",
       font: "body",
       fontWeight: 400,
-      fontSize: [14, 16, 20],
+      fontSize: [18, 20, 24],
       cursor: "pointer",
       "&:hover": {
         color: "highlight",
@@ -61,7 +63,7 @@ export default {
       borderBottomRightRadius: "0.5em",
       font: "body",
       fontWeight: 700,
-      fontSize: [14, 16, 20],
+      fontSize: [18, 20, 24],
     },
     kaomoji: {
       color: "text",
@@ -72,7 +74,7 @@ export default {
       padding: 2,
       font: "heading",
       fontWeight: 700,
-      fontSize: [16, 20, 24],
+      fontSize: [22, 26, 30],
       textDecoration: "none",
       cursor: "pointer",
       outline: "none",

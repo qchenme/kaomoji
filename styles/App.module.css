@@ -1,6 +1,6 @@
 .sidebar {
   grid-area: sidebar;
-  position: fixed;
+  position: absolute;
   left: 0;
 }
 

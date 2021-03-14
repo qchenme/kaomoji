@@ -6,4 +6,9 @@ body {
 
   background-color: #ffffff;
   text-align: center;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
 }
