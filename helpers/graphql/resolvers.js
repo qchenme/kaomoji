@@ -17,6 +17,16 @@ const resolveAllKaomojis = () => {
   return kaomojis;
 };
 
+const resolveRandomKaomoji = () => {
+  const kaomojis = Object.values(allKaomoji()).flat();
+
+  const min = Math.ceil(0);
+  const max = Math.floor(kaomojis.length - 1);
+  const random = Math.floor(Math.random() * (max - min + 1));
+
+  return kaomojis[random];
+};
+
 export const resolvers = {
   Query: {
     kaomojiByCategory(_parent, args, _context) {
@@ -24,6 +34,9 @@ export const resolvers = {
     },
     allKaomojis(_parent, _args, _context) {
       return resolveAllKaomojis();
+    },
+    randomKaomoji(_parent, _args, _context) {
+      return resolveRandomKaomoji();
     },
   },
 };

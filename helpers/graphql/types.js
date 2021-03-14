@@ -4,6 +4,7 @@ export const typeDefs = gql`
   type Query {
     allKaomojis: [String!]!
     kaomojiByCategory(category: Category!): KaomojiCategory!
+    randomKaomoji: String!
   }
   type KaomojiCategory {
     category: Category!
