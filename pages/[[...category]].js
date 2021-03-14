@@ -1,13 +1,13 @@
 import React from "react";
 import Kaomoji from "../components/kaomoji";
-import { categoriesReader, kaomojiReader } from "../helpers/utils";
+import { getCategories, kaomojiByCategory } from "../helpers/utils";
 
 const Category = (props) => {
   return <Kaomoji kaomoji={props.kaomoji} />;
 };
 
 export async function getStaticPaths() {
-  const menu = categoriesReader();
+  const menu = getCategories();
   const paths = menu.map((title) => ({
     params: { category: [title] },
   }));
@@ -22,8 +22,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(props) {
-  const category = props.params.category?.[0] ?? "heart";
-  const kaomoji = kaomojiReader(category);
+  const category = props.params.category?.[0] ?? "love";
+  const kaomoji = kaomojiByCategory(category);
 
   return {
     props: {

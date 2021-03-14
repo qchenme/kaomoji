@@ -1,5 +1,5 @@
 export default [
-  { id: "heart", title: "♥" },
+  { id: "love", title: "♥" },
   { id: "happy", title: "happy" },
   { id: "cool", title: "cool" },
   { id: "dance", title: "dance" },

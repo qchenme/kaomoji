@@ -1,10 +1,10 @@
-import { categoriesReader, kaomojiReader, snakeToCamel } from "../utils";
+import { snakeToCamel, allKaomoji } from "../utils";
 
 const resolveKaomojiByCategory = (args) => {
   const categoryArg = args.category;
 
   const category = snakeToCamel(categoryArg.toLowerCase());
-  const kaomoji = kaomojiReader(category);
+  const kaomoji = allKaomoji()[category];
 
   return {
     category: categoryArg,
@@ -13,8 +13,7 @@ const resolveKaomojiByCategory = (args) => {
 };
 
 const resolveAllKaomojis = () => {
-  const categories = categoriesReader();
-  const kaomojis = categories.map((cat) => kaomojiReader(cat)).flat();
+  const kaomojis = Object.values(allKaomoji()).flat();
   return kaomojis;
 };
 

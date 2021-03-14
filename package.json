@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "npm run compile-kaomoji && next dev",
+    "build": "npm run compile-kaomoji && next build",
+    "start": "next start",
+    "compile-kaomoji": "node compileKaomoji.js"
   },
   "dependencies": {
     "@rebass/preset": "^4.0.5",

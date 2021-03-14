@@ -1,16 +1,15 @@
-import * as fs from "fs";
+import kaomoji from "../assets/kaomoji";
 
-export function categoriesReader() {
-  const menu = fs.readdirSync("public/kaomoji");
-  return menu.map((title) => title.split(".")[0]);
+export function getCategories() {
+  return Object.keys(kaomoji);
 }
 
-export function kaomojiReader(category) {
-  const result = fs.readFileSync(`public/kaomoji/${category}.txt`, "utf8");
-  return result
-    .split("\n")
-    .map((el) => el.normalize())
-    .filter((el) => el != "");
+export function kaomojiByCategory(category) {
+  return kaomoji[category];
+}
+
+export function allKaomoji() {
+  return kaomoji;
 }
 
 export function snakeToCamel(str) {
