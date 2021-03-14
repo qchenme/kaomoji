@@ -13,18 +13,21 @@ import styles from "../styles/App.module.css";
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider theme={theme}>
-      <Box className={styles.layout}>
-        <Box className={styles.header} variant="header">
-          <Header />
+    <>
+      <title>♡Kaomoji</title>
+      <ThemeProvider theme={theme}>
+        <Box className={styles.layout}>
+          <Box className={styles.header} variant="header">
+            <Header />
+          </Box>
+          <Box className={styles.sidebar}>
+            <Menu />
+          </Box>
+          <Box className={styles.content}>
+            <Component {...pageProps} />
+          </Box>
         </Box>
-        <Box className={styles.sidebar}>
-          <Menu />
-        </Box>
-        <Box className={styles.content}>
-          <Component {...pageProps} />
-        </Box>
-      </Box>
-    </ThemeProvider>
+      </ThemeProvider>
+    </>
   );
 }

@@ -9,12 +9,12 @@ const Menu = () => {
   const { category } = router.query;
 
   function currentPage(id) {
-    const page = category?.[0] ?? "heart";
+    const page = category?.[0] ?? "love";
     return id === page;
   }
 
   function href(id) {
-    return id === "heart" ? "/" : id;
+    return id === "love" ? "/" : id;
   }
 
   return (

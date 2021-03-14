@@ -3,7 +3,7 @@ import { typeDefs } from "../../helpers/graphql/types";
 import { resolvers } from "../../helpers/graphql/resolvers";
 
 const microCors = require("micro-cors");
-const cors = microCors({ allowMethods: ["GET", "POST"] });
+const cors = microCors({ allowMethods: ["GET", "POST", "OPTIONS"] });
 const apolloServer = new ApolloServer({ typeDefs, resolvers });
 
 export const config = {

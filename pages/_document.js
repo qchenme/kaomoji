@@ -10,7 +10,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>♡Kaomoji</title>
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -35,7 +34,7 @@ class MyDocument extends Document {
             name="description"
             context="Find kaomojis by category. Copy and paste in one-click."
           />
-          <meta charset="utf-8" />
+          <meta charSet="utf-8" />
         </Head>
         <body>
           <Main />
