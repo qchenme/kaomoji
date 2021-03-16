@@ -17,10 +17,13 @@ export default function MyApp({ Component, pageProps }) {
       <title>♡Kaomoji</title>
       <ThemeProvider theme={theme}>
         <Box className={styles.layout}>
-          <Box className={styles.header} variant="header">
+          <Box className={styles.header}>
             <Header />
           </Box>
-          <Box className={styles.sidebar}>
+          <Box
+            className={styles.sidebar}
+            styles={{ "break-word": "break-all" }}
+          >
             <Menu />
           </Box>
           <Box className={styles.content}>

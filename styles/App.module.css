@@ -2,6 +2,8 @@
   grid-area: sidebar;
   position: absolute;
   left: 0;
+  background-color: #ffffff;
+  border-left: solid #261447;
 }
 
 .content {
@@ -12,13 +14,18 @@
   grid-area: header;
   min-height: 4em;
   min-width: 20em;
+  text-align: right;
+}
+
+.menu {
+  background-color: white;
+  border-left: 0.5px;
 }
 
 .layout {
   display: grid;
-  grid-gap: 4;
-  grid-template-columns: 300px repeat(5, minmax(100px, 1fr));
+  grid-template-columns: repeat(5, minmax(75px, 1fr));
   grid-template-areas:
-    "....... header header header header header"
-    "sidebar content content content content content";
+    "sidebar header header header header header"
+    "content content content content content content";
 }

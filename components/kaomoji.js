@@ -16,7 +16,12 @@ const Kaomoji = ({ kaomoji }) => {
   return (
     <Flex flexWrap="wrap" mx={-2}>
       {kaomoji.map((k, index) => (
-        <Box key={index} px={1} width={[1, 1 / 2, 1 / 3, 1 / 4]}>
+        <Box
+          key={index}
+          px={1}
+          width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}
+          minWidth="max-content"
+        >
           <Button
             variant="kaomoji"
             value={k}
