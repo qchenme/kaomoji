@@ -4,7 +4,12 @@ import { resolvers } from "../../helpers/graphql/resolvers";
 
 const microCors = require("micro-cors");
 const cors = microCors({ allowMethods: ["GET", "POST", "OPTIONS"] });
-const apolloServer = new ApolloServer({ typeDefs, resolvers });
+const apolloServer = new ApolloServer({
+  typeDefs,
+  resolvers,
+  introspection: true,
+  playground: true,
+});
 
 export const config = {
   api: {
