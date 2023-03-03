@@ -8,6 +8,7 @@ export default [
   { id: "embarrassed", title: "embarrassed" },
   { id: "angry", title: "angry" },
   { id: "cat", title: "cat" },
+  { id: "dog", title: "dog" },
   { id: "bear", title: "bear" },
   { id: "sleep", title: "sleep" },
   { id: "flipTable", title: "flip table" },
